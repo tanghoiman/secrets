@@ -1,0 +1,173 @@
+*{margin:0;padding:0;}
+body { 
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
+	background: black;
+	
+	
+
+}
+
+
+html, body {
+	margin: 0;
+	width:100%;
+	height:100%;
+}
+
+#scene {border:0px solid white;
+	margin: 0;
+	top:300px;
+	width:600px;
+	position: relative;
+	text-align: center;
+	
+}
+.hole {
+	animation:none;
+}
+
+.guide {
+	position: fixed;
+	text-align: center;
+	font-size:10px;
+	bottom:190px;
+	color: white;
+	width: 100%;
+	padding:0px;
+	letter-spacing: 5px;
+	opacity: 0.5;
+
+}
+input {
+	width: 38px;
+	height: 38px;
+	background-color: transparent;
+	border: solid;
+	border-radius: 22px;
+	outline: none;
+	font-size: 14px;
+	color: white;
+	border-width: 1px;
+	opacity: 0.7;
+	transition: 1s;
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
+	animation:  2s linear 0s normal none infinite running;
+	cursor: pointer;
+	text-align: center;
+	
+}
+
+input:hover {
+	color: #E8F370;
+}
+
+
+input[type=text]:focus {
+    width: 350px;
+	height: 38px;
+	padding-left: 20px;
+	padding-right: 20px;
+	opacity: 1;
+	font-size: 14px;
+	cursor: text;
+	filter:none;
+	
+}
+
+
+@media only screen and (max-width:768px){
+	.guide {
+		bottom:90px;
+	}
+}
+
+@media only screen and (max-height:768px){
+	.guide {
+		bottom:40px;
+	}
+}
+a {
+	color:white;
+	text-decoration: none;
+}
+a:hover {
+	color: #E8F370;
+}
+
+.info {
+	
+	color: white;
+	text-align: right;
+	padding-right: 22px;
+	font-size:20px;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.animation {
+	position: fixed;
+	text-align: center;
+	font-size: 12px;
+	bottom: 2000px;
+	color: white;
+	width: 100%;
+	padding: 0px;
+	letter-spacing: 3px;
+	opacity: 0.5;
+	filter: blur(1px);
+	animation: spin 20s linear 1;
+}
+
+
+.footer {
+	color: white;
+	position: fixed;
+	bottom: 25px;
+	padding-left: 22px;
+	font-size:9px;
+	opacity: 0.5;
+	letter-spacing: 3px;
+}
+
+@keyframes spin {
+	0% {
+		transform:rotate(0deg);
+		Bottom: 935px;
+		filter:blur(1px);
+		opacity:.5;
+	}
+	90% {
+		transform:rotate(-180deg); 
+		bottom:400px ;
+		font-size: 0px;
+		filter:blur(5px);
+		opacity:0;
+		
+	}
+	100% {
+		transform:rotate(-180deg); 
+		bottom:2000px ;
+		filter:blur(5px);
+		opacity:0;
+		
+	}
+}
+
+@keyframes impact {
+	0% {
+		width:100%;
+		height:100%;
+		
+	}
+	50% {
+		width:120%;
+	    height:120%;
+	}
+	100% {
+		width:100%;
+		height:100%;
+		
+	}
+}
+
+
